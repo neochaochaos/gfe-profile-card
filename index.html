@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,7 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
       If you're not using Tailwind, you may delete the <script> -->
     <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
@@ -23,18 +25,63 @@
       /* You may write styles inside this <style> tag or within `css/style.css`. */
     </style>
   </head>
-  <body>
-    <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
-      Hello world! Write your content here.
-    </h1>
+  <!-- prevent margin collapse -->
+  <br />
+  <body class="bg-gradient-to-br from-[#F9FAFB] to-[#D2D6DB]">
+    <div class="w-[340px] mx-auto mt-[200px] bg-white rounded-lg shadow-lg">
+      <div class="flex flex-col items-center gap-y-6 pt-6 pb-10 px-4">
+        <img
+          class="w-16 text-neutral-900"
+          src="./img/profile.png"
+          alt="profile picture"
+        />
+        <div>
+          <div class="text-base text-center">Sarah Dole</div>
+          <div class="text-sm text-neutral-600">
+            Front End Engineer @ Microsoft
+          </div>
+        </div>
+        <p class="text-neutral-600 text-center">
+          I turn coffee into bugs which are fixed by someone else. Certified
+          Stack Overflow and ChatGPT developer.
+        </p>
+      </div>
 
-    <!-- 
-      Sarah Dole
-      Front End Engineer @ Microsoft
-      I turn coffee into bugs which are fixed by someone else. Certified Stack Overflow and ChatGPT developer.
-      Contact me
-     -->
+      <div class="mx-4">
+        <button
+          class="bg-indigo-700 hover:bg-indigo-800 focus:shadow-[0px_0px_0px_4px_rgba(68,76,231,0.12)] text-white w-full py-2.5 rounded-md"
+        >
+          Contact Me
+        </button>
+        <div class="text-indigo-700 flex justify-evenly px-12 py-4">
+          <a
+            href=""
+            class="hover:bg-[#FAFAFA] p-2 focus:shadow-[0px_0px_0px_4px_rgba(68,76,231,0.12)] focus:rounded-lg"
+          >
+            <i class="ri-github-fill"></i>
+          </a>
+          <a
+            href="
+          "
+            class="hover:bg-[#FAFAFA] p-2 focus:shadow-[0px_0px_0px_4px_rgba(68,76,231,0.12)] focus:rounded-lg"
+          >
+            <i class="ri-linkedin-box-fill"></i>
+          </a>
+          <a
+            href=""
+            class="hover:bg-[#FAFAFA] p-2 focus:shadow-[0px_0px_0px_4px_rgba(68,76,231,0.12)] focus:rounded-lg"
+          >
+            <i class="ri-instagram-fill"></i>
+          </a>
+          <a
+            href=""
+            class="hover:bg-[#FAFAFA] p-2 focus:shadow-[0px_0px_0px_4px_rgba(68,76,231,0.12)] focus:rounded-lg"
+          >
+            <i class="ri-twitter-x-fill"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <!-- Attribute this challenge to yourself! -->
     <div class="credits">
